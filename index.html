@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습</title>
+  <!-- Page css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/layout.css">
+
+  <!-- Swiper -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css" />
+
+  <!-- Fullpage -->
+  <script src="./script/jquery-3.7.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- jQuery Cookie -->
+  <script src="./script/jquery.cookie.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="logo">
+      <a href="#" title="home">
+        <img src="./images/logo_white.png" alt="로고">
+      </a>
+    </h1>
+    <ul id="menu">
+      <li data-menuanchor="sec1" class="active"><a href="#sec1">소개</a></li>
+      <li data-menuanchor="sec2"><a href="#sec2">임무와 이상</a></li>
+      <li data-menuanchor="sec3"><a href="#sec3">주요 업무</a></li>
+      <li data-menuanchor="sec4"><a href="#sec4">자료실</a></li>
+      <li data-menuanchor="sec5"><a href="#sec5">국민참여</a></li>
+    </ul>
+    <div id="menu_right">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </header>
+<div id="fullpage">
+  <div class="section sec1 active">
+    <h2>Section1</h2>
+    <article>
+      <h3><img src="./images/just_logo1.jpg" alt="로고"></h3>
+      <span>하늘을 친구처럼 국민을 하늘처럼</span>
+      <p>국민의 일상이 더 행복해질 수 있도록 국민과 동행하는 대한민국 기상청</p>
+      <a href="https://www.weather.go.kr/w/index.do" title="기상청 날씨누리 바로가기">기상청 날씨누리</a>
+      <a href="https://www.kma.go.kr/kma/" title="기상행정 누리집 바로가기">기상행정 누리집</a>
+      <a href="#intro" title="자세히 보기">기관 소개</a>
+    </article>
+    <video autoplay muted loop='infinite'>
+      <source src="./video/kma_pr.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="section sec2">
+    <h2>Section2</h2>
+    <div class="intro_box">
+      <div class="intro_top">
+        <div class="title_box">
+          <p>기상청 소개</p>
+          <p>기상청은 변덕스런 날씨 파악하고 대기를 관측하고<br>
+          분석하여 정확한 기상에 대한 정보를 제공하고 국민의 생명과<br>
+          재산을 지키기 위해 위험기상 및 지진서비스 개선을 하여<br>
+          다가올 미래를 위해 준비하고 있습니다.</p>
+        </div>
+        <div class="intro_top_con">
+          <div class="intro_top_left">
+            <div class="intro_color">
+              <img src="./images/intro_color01.jpg" alt="">
+              <div class="caption01">
+                <div class="cap01_top">
+                  <p>#003664</p>
+                  <p>#E3022C</p>
+                </div>
+                <div class="cap01_bot">
+                  <p>#575757</p>
+                  <p>#FFFFFF</p>
+                </div>
+              </div>
+            </div>
+            <div class="intro_sig">
+              <img src="./images/intro_sig01.jpg" alt="">
+              <div class="caption01">
+                <div class="p_box">
+                  <p>signature</p>
+                  <p>한글 창제기의 글꼴인
+                  정음체를 현대적 감각에 맞게
+                  발전시켜 태극과의 조화를
+                  추구하고 권위를 뒷받침 하고자 함</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="intro_id">
+            <img src="./images/intro_id01.jpg" alt="">
+            <div class="caption02">
+              <div class="p_box">
+                <div>CI로 이동</div>
+                <p>Ministry Identity</p>
+                <p>청, 홍, 백의 조합과 담백함을 담은 태극문양은
+                  국민과 세계, 미래를 향한 진취적인 대한민국 정부를 표상합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="intro_bot">
+        <div class="intro_youtube">
+          <img src="./images/intro_youtube01.jpg" alt="">
+          <div class="caption03">
+            <div class="p_box">
+              <div>채널로 이동</div>
+              <p>대한민국 기상청</p>
+              <p>대한민국 기상청은 계절별 날씨에 맞는 캠페인과 기상과학, 이벤트 등 다양한 정보를 전달하는 기상청 채널과 날씨 예보관이 직접 알려주는 날씨! 예보 소통 전문채널 옙TV함께 운영하고 있습니다. </p>
+            </div>
+          </div>
+        </div>
+        <div class="intro_fam">
+          <img src="./images/intro_fam01.jpg" alt="">
+          <div class="caption03">
+            <div class="p_box">
+              <div>CI로 이동</div>
+              <p>기상청 날씨누리</p>
+              <p>기상청 날씨누리는 내 지역 및 전국의 현재 날씨와 습도, 바람, 강수확률 및 강수량과 날씨특보부터 오늘, 내일, 모레까지의 날씨도 확인이 가능하며 다양한 기상정보와 함께 기상청의 컨텐츠들을 확인할 수 있는 국가기상종합정보 사이트입니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section sec3">
+    <div class="swiper-container sec3_slide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide sec3_page1">
+
+        </div>
+        <div class="swiper-slide sec3_page2">
+
+        </div>
+        <div class="swiper-slide sec3_page3">
+
+        </div>
+        <div class="swiper-slide sec3_page4">
+
+        </div>
+        <div class="swiper-slide sec3_page5">
+
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="section sec4">
+    <h2>Section4</h2>
+  </div>
+  <div class="section sec5">
+    <h2>Section5</h2>
+  </div>
+  <div class="section sec6">
+    <h2>Section6</h2>
+    <p>notice / banner / footer</p>
+  </div>   
+</div>
+</body>
+<script>
+  let length = $(".sec3 .swiper-slide").length;
+  let swiper1 = new Swiper('.sec3_slide', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    freeMode: false,
+    speed: 1000,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    mousewheel: true,
+    on: {
+      slideChange: function(){        
+        let idx = this.activeIndex;
+        // 처음과 마지막 슬라이드가 아닐경우 fullpage전환 막기
+        if(this.activeIndex != 0 && idx != length) $.fn.fullpage.setAllowScrolling(false);
+        if(length == 2 && idx == 0) $.fn.fullpage.setAllowScrolling(false) //슬라이드가 2개밖에 없을때
+        // console.log('즉시 : ' + idx);
+      },  
+      slideChangeTransitionEnd: function(){
+        let idx = this.activeIndex;
+        // 처음과 마지막 슬라이드일 경우 fullpage전환 풀기
+        if(idx == 0 || idx >= length-1) $.fn.fullpage.setAllowScrolling(true);
+        // console.log('전환후 : ' + idx);     
+      },
+      touchMove: function(e) {        
+        let startY = e.touches.startY;
+        setTimeout(function(){
+          if(startY > e.touches.currentY) swiper1.slideNext();  
+          else swiper1.slidePrev();
+        },100);        
+      },
+    }, 
+  });            
+</script>
+<!-- Page script -->
+<script src="./script/main.js"></script>
+<script src="./script/layout.js"></script>
+<script src="./script/swiper.js"></script>
+</html>
